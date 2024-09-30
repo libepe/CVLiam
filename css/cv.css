@@ -1,0 +1,151 @@
+body{
+    text-align: center;
+    background-color: rgb(228, 255, 255);
+    height: 100%; /* Ensures body takes up full height of the viewport */
+    margin: 0; /* Removes default margin */
+    justify-content: center; /* Centers the card horizontally */
+    align-items: center; /* Centers the card vertically */
+}
+
+header {
+    background-color: white;
+    border: 5px solid teal;
+    width: 99.5%;
+    height: 100px;
+    box-shadow: 0 4px 10px teal;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; 
+    padding: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+    color: teal;
+    height: 100%;
+    padding: 0;
+}
+
+h2 {
+    margin: 0 20px; /* Add margin to space out the <h2> elements */
+    font-weight: bold;
+    color: teal;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 100%;
+    transition: color 0.8s ease, background-color 0.8s ease;
+    display: flex;
+    align-items: center;
+}
+
+h2:hover{
+    color: lightseagreen;
+    background-color: rgba(32, 178, 170, 0.1);
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    scale: 1.4;
+    padding: 1em;
+    display: inline-block;
+    height: 35px;
+}
+
+h1 span{
+    transform: scale(0.6);
+    display: block;
+    padding-bottom: 1em;
+    color: teal;
+}
+
+#card{
+    width: 800px;
+    height: 900px;
+    perspective: 1000px; /* Perspective for the 3D effect */
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d; /* Ensures the 3D effect is preserved */
+    transition: transform 1.5s ease;
+    border-radius: 20px; /* Rounded corners for the card */
+    box-shadow: 0 4px 10px teal; /* Box shadow for the entire card */
+}
+
+.rotated {
+    transform: rotateY(180deg) translateZ(40px); 
+    box-shadow: 0 0 20px rgba(teal, 0.8), 
+                0 10px 30px rgba(teal, 0.5); 
+}
+
+
+.perfil, .aboutme {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the backface when not visible */
+    border-radius: 20px; /* Rounded corners for both sides */
+    background-color: white;
+}
+
+.perfil{
+    box-shadow: 0 4px 10px rgba(teal, 0.2);
+}
+
+.aboutme {
+    transform: rotateY(180deg);
+    box-shadow: inset 0 0 10px rgba(teal, 0.3);
+}
+
+#aboutmebutton{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2em;
+    color: white;
+    background-color: teal;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 10px teal;
+    transition: background-color 0.8s ease;
+    display: inline-block;
+    margin-top: 100px;
+    
+}
+
+#aboutmebutton:hover{
+    background-color: lightseagreen;
+}
+
+#perfilbutton{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2em;
+    color: white;
+    background-color: teal;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 10px teal;
+    transition: background-color 0.8s ease;
+    display: inline-block;
+    margin-top: 100px;
+    
+}
+
+#perfilbutton:hover{
+    background-color: lightseagreen;
+}
+
+.aboutmetext{
+    color: teal;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
