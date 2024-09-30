@@ -143,7 +143,29 @@ h1 span{
     margin-right: 40px;
 }
 
+#fondo {
+    width: 75px;
+    height: 75px;
+    background-color: teal;
+    border-radius: 20px;
+    position: absolute; 
+    animation: fondo 4s linear infinite; 
+    z-index: -1;
+}
 
+
+@keyframes fondo {
+    0% {
+        left: 0;
+        top: 0; 
+        transform: rotate(0deg);
+    }
+    100% {
+        left: calc(100% - 75px);
+        top: calc(100% - 75px); 
+        transform: rotate(360deg);
+    }
+}
 
 
 
